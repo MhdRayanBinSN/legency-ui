@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./captured-global.css";
+@import "./captured-base.css";
+@import "./captured-inline.css";
+@import "./captured-home.css";
+@import "./captured-blog.css";
+@import "./home-effects.css";
+
+@theme inline {
+  --font-sans: var(--font-body);
+}

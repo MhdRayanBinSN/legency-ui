@@ -7,7 +7,17 @@ import { Button } from "@/components/ui/button";
 type ConsentChoice = "accepted" | "rejected";
 
 export default function ConsentBanner(): JSX.Element {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(() => {
+    if (typeof window === "undefined") return false;
+    try {
+      const saved = localStorage.getItem("lm-consent");
+      if (!saved) return true;
+      const parsed = JSON.parse(saved) as { state?: string };
+      return parsed.state !== "accepted" && parsed.state !== "rejected";
+    } catch {
+      return true;
+    }
+  });
   const bannerRef = useRef<HTMLElement>(null);
   const reduceMotion = useReducedMotion();
 

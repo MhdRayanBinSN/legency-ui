@@ -36,27 +36,23 @@ function ArrowLink({ href, children }: { href: string; children: string }): JSX.
 }
 
 function FeaturedArticle({ post }: { post: BlogPost }): JSX.Element {
-  const href = `/blog/${post.slug}/`;
-
   return (
     <section className="featured" data-astro-cid-x255k2k2>
       <div className="container mx-auto w-full max-w-[var(--max-w)] px-[var(--pad-x)]" data-astro-cid-x255k2k2>
         <h2 className="featured__label" data-astro-cid-x255k2k2>Featured Article</h2>
         <article className="featured__card" data-astro-cid-x255k2k2>
-          <a className="featured__img-link" href={href} tabIndex={-1} aria-hidden="true" data-astro-cid-x255k2k2>
+          <div className="featured__img-link" aria-hidden="true" data-astro-cid-x255k2k2>
             <img className="featured__img" src={post.image} alt="" width="1600" height="1067" fetchPriority="high" data-astro-cid-x255k2k2 />
-          </a>
+          </div>
           <div className="featured__body" data-astro-cid-x255k2k2>
             <div className="featured__meta" data-astro-cid-x255k2k2>
               <span className="featured__chip" data-tag={post.category.toLowerCase()} data-astro-cid-x255k2k2>{post.category}</span>
               <span className="featured__date" data-astro-cid-x255k2k2>{post.date}</span>
             </div>
-            <h3 className="featured__title" data-astro-cid-x255k2k2>
-              <a className="featured__title-link" href={href} data-astro-cid-x255k2k2>{post.title}</a>
-            </h3>
+            <h3 className="featured__title" data-astro-cid-x255k2k2>{post.title}</h3>
             <p className="featured__desc" data-astro-cid-x255k2k2>{post.description}</p>
             <div className="featured__cta" data-astro-cid-x255k2k2>
-              <ArrowLink href={href}>Read More</ArrowLink>
+              <ArrowLink href="/blog/">Browse Articles</ArrowLink>
             </div>
           </div>
         </article>
@@ -67,7 +63,7 @@ function FeaturedArticle({ post }: { post: BlogPost }): JSX.Element {
 
 function RecentArticleCard({ post }: { post: BlogPost }): JSX.Element {
   return (
-    <a className="post-card" href={`/blog/${post.slug}/`} data-astro-cid-x255k2k2>
+    <article className="post-card" data-astro-cid-x255k2k2>
       <div className="post-card__media" data-astro-cid-x255k2k2>
         <img className="post-card__img" src={post.image} alt={post.alt} width="1600" height="1067" loading="lazy" decoding="async" data-astro-cid-x255k2k2 />
       </div>
@@ -77,7 +73,7 @@ function RecentArticleCard({ post }: { post: BlogPost }): JSX.Element {
       </div>
       <h3 className="post-card__title" data-astro-cid-x255k2k2>{post.title}</h3>
       <p className="post-card__desc" data-astro-cid-x255k2k2>{post.description}</p>
-    </a>
+    </article>
   );
 }
 

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { JSX } from "react";
+import { BubbleArrowLink } from "@/components/ui/bubble-arrow-link";
 
 export default function Hero(): JSX.Element {
   return (
@@ -83,89 +84,7 @@ export default function Hero(): JSX.Element {
                 </span>
               </li>
             </ul>
-            <a
-              className="btn-bubble-arrow btn-bubble-arrow--blue"
-              href="/get-in-touch/"
-              data-astro-cid-ekguhzzh="true"
-            >
-              <div
-                className="btn-bubble-arrow__arrow"
-                aria-hidden="true"
-                data-astro-cid-ekguhzzh
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="100%"
-                  className="btn-bubble-arrow__arrow-svg"
-                  data-astro-cid-ekguhzzh
-                >
-                  <polyline
-                    points="18 8 18 18 8 18"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeMiterlimit="10"
-                    strokeWidth="1.5"
-                    data-astro-cid-ekguhzzh
-                  ></polyline>
-                  <line
-                    x1="18"
-                    y1="18"
-                    x2="5"
-                    y2="5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeMiterlimit="10"
-                    strokeWidth="1.5"
-                    data-astro-cid-ekguhzzh
-                  ></line>
-                </svg>
-              </div>
-              <div
-                className="btn-bubble-arrow__content"
-                data-astro-cid-ekguhzzh
-              >
-                <span
-                  className="btn-bubble-arrow__content-text"
-                  data-astro-cid-ekguhzzh
-                >
-                  Get in touch
-                </span>
-              </div>
-              <div
-                className="btn-bubble-arrow__arrow is--duplicate"
-                aria-hidden="true"
-                data-astro-cid-ekguhzzh
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="100%"
-                  className="btn-bubble-arrow__arrow-svg"
-                  data-astro-cid-ekguhzzh
-                >
-                  <polyline
-                    points="18 8 18 18 8 18"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeMiterlimit="10"
-                    strokeWidth="1.5"
-                    data-astro-cid-ekguhzzh
-                  ></polyline>
-                  <line
-                    x1="18"
-                    y1="18"
-                    x2="5"
-                    y2="5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeMiterlimit="10"
-                    strokeWidth="1.5"
-                    data-astro-cid-ekguhzzh
-                  ></line>
-                </svg>
-              </div>
-            </a>
+            <BubbleArrowLink href="/get-in-touch/">Get in touch</BubbleArrowLink>
           </div>
           <div className="hero__partners" data-astro-cid-lcdefpme>
             <span className="hero__partners-label" data-astro-cid-lcdefpme>

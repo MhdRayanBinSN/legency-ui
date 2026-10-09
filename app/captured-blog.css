@@ -68,8 +68,7 @@
 .featured__img-link[data-astro-cid-x255k2k2]:hover
   .featured__img[data-astro-cid-x255k2k2] {
   transform: scale(1.03);
-}
-@media (prefers-reduced-motion: reduce) {
+}@media (prefers-reduced-motion: reduce){
   .featured__img-link[data-astro-cid-x255k2k2]
     .featured__img[data-astro-cid-x255k2k2] {
     transition: none;
@@ -77,8 +76,7 @@
   .featured__img-link[data-astro-cid-x255k2k2]:hover
     .featured__img[data-astro-cid-x255k2k2] {
     transform: none;
-  }
-}
+  }}
 .featured__desc[data-astro-cid-x255k2k2] {
   font-size: var(--para);
   max-width: 48ch;
@@ -86,15 +84,13 @@
 .featured__cta[data-astro-cid-x255k2k2] {
   padding-top: var(--sp-4);
   margin-top: auto;
-}
-@media (width<=900px) {
+}@media (width<=900px){
   .featured__card[data-astro-cid-x255k2k2] {
     grid-template-columns: 1fr;
   }
   .featured__cta[data-astro-cid-x255k2k2] {
     padding-top: var(--sp-3);
-  }
-}
+  }}
 .recent__head[data-astro-cid-x255k2k2] {
   align-items: center;
   gap: var(--sp-4);
@@ -123,12 +119,10 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   display: grid;
   position: relative;
-}
-@media (width<=900px) {
+}@media (width<=900px){
   .recent__grid[data-astro-cid-x255k2k2] {
     grid-template-columns: 1fr;
-  }
-}
+  }}
 .post-card[data-astro-cid-x255k2k2] {
   background: var(--white);
   border-radius: var(--radius);

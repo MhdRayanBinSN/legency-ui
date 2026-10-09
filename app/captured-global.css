@@ -183,18 +183,6 @@ button {
   position: absolute;
   transform: scale(0.9) rotate(0.001deg);
 }
-[data-us-project],
-[data-us-project-src] {
-  pointer-events: none;
-}
-[data-us-project] canvas,
-[data-us-project-src] canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  inset: 0;
-}
 [data-underline-link] {
   text-decoration: none;
   position: relative;
@@ -222,8 +210,7 @@ button {
   transform-origin: 100%;
   transition-delay: 0s;
   transform: scaleX(0) rotate(0.001deg);
-}
-@media (hover: hover) and (pointer: fine) {
+}@media (hover: hover) and (pointer: fine){
   [data-hover]:hover [data-underline-link]:before,
   [data-underline-link]:hover:before {
     transform-origin: 0;
@@ -240,16 +227,12 @@ button {
     transform-origin: 0;
     transition-delay: 0.3s;
     transform: scaleX(1) rotate(0.001deg);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
+  }}@media (prefers-reduced-motion: reduce){
   [data-underline-link]:before,
   [data-underline-link="alt"]:before,
   [data-underline-link="alt"]:after {
     transition: none;
-  }
-}
-@property --roll-fade {
+  }}@property --roll-fade{
   syntax: "<number>";
   inherits: true;
   initial-value: 0;
@@ -266,8 +249,7 @@ button {
 }
 .roll-char[data-roll-twin] {
   --roll-amt: calc(1 - var(--roll-fade));
-}
-@media (prefers-reduced-motion: reduce) {
+}@media (prefers-reduced-motion: reduce){
   .roll-char,
   .roll-char[data-roll-twin] {
     filter: none;
@@ -276,40 +258,7 @@ button {
   }
   .roll-char[data-roll-twin] {
     display: none;
-  }
-}
-.badge-pin {
-  right: var(--pad-x);
-  bottom: var(--pad-x);
-  z-index: 60;
-  filter: drop-shadow(0 6px 20px #0000002e);
-  opacity: 0;
-  visibility: hidden;
-  transition:
-    opacity 0.45s,
-    transform 0.45s,
-    visibility 0.45s;
-  position: fixed;
-  transform: translateY(12px);
-}
-.badge-pin.is-shown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.badge-pin .badge {
-  height: 30px;
-}
-@media (width<=1099px) {
-  .badge-pin {
-    display: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .badge-pin {
-    transition: none;
-  }
-}
+  }}
 .live-dither__canvas {
   opacity: 0;
   pointer-events: none;

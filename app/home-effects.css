@@ -139,7 +139,21 @@
 body.nav-is-open {
   overflow: hidden;
 }
+/* Tier disclosure: collapsed on mobile, always open on desktop */
+@media (max-width: 991px) {
+  .tier__body[data-open="false"] {
+    flex: 0 0 0px;
+    visibility: hidden;
+    transition: visibility 0s linear 0.42s;
+  }
+}
 
+@media (min-width: 992px) {
+  .tier__body {
+    height: auto !important;
+    opacity: 1 !important;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .logo-wall__logo-img,
   .separates--motion .separates__item,

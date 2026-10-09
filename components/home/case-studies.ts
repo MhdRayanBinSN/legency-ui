@@ -3,7 +3,7 @@
 // Two cards that differed only in this data were copy-pasted; they now map over
 // it. The chip label follows the value ("18+ months of ongoing support"), so the
 // label lives with the number rather than being derived from it.
-export type CaseStudy = {
+type CaseStudy = {
   client: string;
   href: string;
   /** Covers at 1x and 2x. */

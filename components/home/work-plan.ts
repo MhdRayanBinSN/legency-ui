@@ -3,7 +3,7 @@
 
 import type { TeamIconName } from "@/components/home/icons";
 
-export type WorkPlanStep = {
+type WorkPlanStep = {
   icon: TeamIconName;
   title: string;
   body: string;

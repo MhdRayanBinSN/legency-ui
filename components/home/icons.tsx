@@ -32,7 +32,7 @@ const bold = (children: JSX.Element): JSX.Element => icon("1.7", children);
  * `bare` matches the tier cards' `icon-chip--bare`; the default is the "How we
  * work" `icon-chip`.
  */
-export function IconChip({
+function IconChip({
   size,
   children,
   bare = false,

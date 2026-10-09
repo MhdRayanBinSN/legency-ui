@@ -1,12 +1,25 @@
 import type { JSX } from "react";
 
 /**
- * Filled star used by the Google reviews summary and each review row.
+ * A row of five filled stars, used by the Google reviews summary and each
+ * review row.
  *
  * The rendered markup is identical to the inline SVG this replaced, including
  * the `data-astro-cid-yrxfijmp` attributes the captured CSS scopes against.
  */
-export function Star(): JSX.Element {
+export function Stars(): JSX.Element {
+  return (
+    <>
+      <Star />
+      <Star />
+      <Star />
+      <Star />
+      <Star />
+    </>
+  );
+}
+
+function Star(): JSX.Element {
   return (
     <svg className="is-filled" viewBox="0 0 24 24" data-astro-cid-yrxfijmp>
       <path
@@ -14,16 +27,5 @@ export function Star(): JSX.Element {
         data-astro-cid-yrxfijmp
       ></path>
     </svg>
-  );
-}
-
-/** A row of `count` stars. */
-export function Stars({ count = 5 }: { count?: number }): JSX.Element {
-  return (
-    <>
-      {Array.from({ length: count }, (_, index) => (
-        <Star key={index} />
-      ))}
-    </>
   );
 }

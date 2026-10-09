@@ -48,7 +48,7 @@ export default function GoogleReviews(): JSX.Element {
               aria-hidden="true"
               data-astro-cid-yrxfijmp
             >
-              <Stars count={5} />
+              <Stars />
             </span>
             <p className="greviews__count" data-astro-cid-yrxfijmp>
               <strong data-astro-cid-yrxfijmp>5.0</strong> from{" "}
@@ -73,7 +73,7 @@ export default function GoogleReviews(): JSX.Element {
               role="img"
               data-astro-cid-yrxfijmp
             >
-              <Stars count={5} />
+              <Stars />
             </span>
             <p className="greview__quote" data-astro-cid-yrxfijmp>
               <span data-astro-cid-yrxfijmp>
@@ -98,7 +98,7 @@ export default function GoogleReviews(): JSX.Element {
               role="img"
               data-astro-cid-yrxfijmp
             >
-              <Stars count={5} />
+              <Stars />
             </span>
             <p className="greview__quote" data-astro-cid-yrxfijmp>
               <span data-astro-cid-yrxfijmp>

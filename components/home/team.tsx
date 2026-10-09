@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import { TeamIcon } from "@/components/home/icons";
+import { WORK_PLAN_STEPS } from "@/components/home/work-plan";
 
 export default function WorkPlan(): JSX.Element {
   return (
@@ -21,37 +22,13 @@ export default function WorkPlan(): JSX.Element {
            the blue rounded square from the tier chips and the numbered pills
            in "What Separates Us" (Icon.astro). */}
         <div className="team__grid" data-astro-cid-lcdefpme>
-          <article className="sys-card" data-astro-cid-lcdefpme>
-            <TeamIcon name="plan" />
-            <h3 data-astro-cid-lcdefpme>
-              Agreed priorities and delivery dates
-            </h3>
-            <p data-astro-cid-lcdefpme>
-              We agree the priorities with your team and schedule work around
-              your plans. Requests stay in a shared channel, with larger changes
-              scoped before work starts.
-            </p>
-          </article>
-          <article className="sys-card" data-astro-cid-lcdefpme>
-            <TeamIcon name="supplier" />
-            <h3 data-astro-cid-lcdefpme>
-              Support for your supplier approval process
-            </h3>
-            <p data-astro-cid-lcdefpme>
-              We work with your legal and finance teams on contracts, security
-              questions and purchase-order billing. Our experience includes
-              enterprise security reviews and corporate accounts payable.
-            </p>
-          </article>
-          <article className="sys-card" data-astro-cid-lcdefpme>
-            <TeamIcon name="reporting" />
-            <h3 data-astro-cid-lcdefpme>Monthly reporting on results</h3>
-            <p data-astro-cid-lcdefpme>
-              Your report shows completed work, the results we can measure and
-              the priorities we recommend next. Depending on the agreed scope,
-              it covers search visibility, AI citations and conversions.
-            </p>
-          </article>
+          {WORK_PLAN_STEPS.map((step) => (
+            <article key={step.title} className="sys-card" data-astro-cid-lcdefpme>
+              <TeamIcon name={step.icon} />
+              <h3 data-astro-cid-lcdefpme>{step.title}</h3>
+              <p data-astro-cid-lcdefpme>{step.body}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>

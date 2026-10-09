@@ -153,6 +153,8 @@ const TEAM_ICONS = {
   ),
 } as const;
 
+export type TeamIconName = keyof typeof TEAM_ICONS;
+
 /** Tier-card icon inside a 22px bare chip. */
 export function TierIcon({ name }: { name: keyof typeof TIER_ICONS }): JSX.Element {
   return <IconChip size="22px" bare>{TIER_ICONS[name]}</IconChip>;

@@ -750,7 +750,7 @@ function setupFooterWave(): Cleanup {
   });
 }
 
-export function useHomeExperience() {
+function useHomeExperience() {
   useEffect(() => setupLogoCycle(), []);
   useEffect(() => setupHeadingRoll(), []);
   useEffect(() => setupArcMarquee(), []);

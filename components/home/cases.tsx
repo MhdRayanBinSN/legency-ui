@@ -3,7 +3,7 @@ import type { JSX } from "react";
 import { BubbleArrowLink } from "@/components/ui/bubble-arrow-link";
 import { CASE_STUDIES } from "@/components/home/case-studies";
 
-export default function CaseStudies(): JSX.Element {
+export default function Cases(): JSX.Element {
   return (
     <section className="section cases" data-astro-cid-lcdefpme>
       <div className="container mx-auto w-full max-w-[var(--max-w)] px-[var(--pad-x)]" data-astro-cid-lcdefpme>

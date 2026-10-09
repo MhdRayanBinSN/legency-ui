@@ -349,7 +349,7 @@ function setupArcMarquee(): Cleanup {
   return () => cleanups.forEach((cleanup) => cleanup());
 }
 
-function setupCapabilitySequence(): Cleanup {
+function setupCapabilityStickyPanel(): Cleanup {
   const section = document.querySelector<HTMLElement>(".separates");
   const panel = section?.querySelector<HTMLElement>("[data-sticky-feature-wrap]");
   const container = panel?.closest<HTMLElement>(".container");
@@ -754,7 +754,7 @@ function useHomeExperience() {
   useEffect(() => setupLogoCycle(), []);
   useEffect(() => setupHeadingRoll(), []);
   useEffect(() => setupArcMarquee(), []);
-  useEffect(() => setupCapabilitySequence(), []);
+  useEffect(() => setupCapabilityStickyPanel(), []);
   useEffect(() => setupPixelReveal(), []);
   useEffect(() => setupFooterWave(), []);
   useEffect(() => {

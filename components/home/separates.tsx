@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-export default function CapabilitySequence(): JSX.Element {
+export default function Separates(): JSX.Element {
   return (
     <section className="separates" data-astro-cid-lcdefpme>
       <div

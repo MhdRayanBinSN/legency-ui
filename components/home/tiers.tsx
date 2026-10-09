@@ -7,7 +7,7 @@ import {
 import { BubbleArrowLink } from "@/components/ui/bubble-arrow-link";
 import { TierIcon } from "@/components/home/icons";
 
-export default function ServiceTiers(): JSX.Element {
+export default function Tiers(): JSX.Element {
   return (
     <section className="section tiers" data-astro-cid-lcdefpme>
       <div

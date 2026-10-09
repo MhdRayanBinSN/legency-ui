@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import { TeamIcon } from "@/components/home/icons";
 import { WORK_PLAN_STEPS } from "@/components/home/work-plan";
 
-export default function WorkPlan(): JSX.Element {
+export default function Team(): JSX.Element {
   return (
     <section className="section team" data-astro-cid-lcdefpme>
       <div

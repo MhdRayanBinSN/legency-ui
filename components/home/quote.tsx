@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { JSX } from "react";
 
-export default function ChannelSightFeature(): JSX.Element {
+export default function Quote(): JSX.Element {
   return (
     <section className="quote" data-astro-cid-lcdefpme>
       <div

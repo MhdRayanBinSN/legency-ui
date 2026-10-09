@@ -1,13 +1,13 @@
 import SiteHeader from "@/components/site-header";
 import Hero from "@/components/home/hero";
-import ServiceTiers from "@/components/home/tiers";
-import ChannelSightFeature from "@/components/home/quote";
+import Tiers from "@/components/home/tiers";
+import Quote from "@/components/home/quote";
 import GoogleReviews from "@/components/home/greviews";
-import CaseStudies from "@/components/home/cases";
+import Cases from "@/components/home/cases";
 import ArcMarquee from "@/components/home/arc";
-import WorkPlan from "@/components/home/team";
-import CapabilitySequence from "@/components/home/separates";
-import Guides from "@/components/home/blogteaser";
+import Team from "@/components/home/team";
+import Separates from "@/components/home/separates";
+import BlogTeaser from "@/components/home/blogteaser";
 import SiteFooter from "@/components/site-footer";
 import ConsentBanner from "@/components/consent-banner";
 import HomeExperience from "@/components/home/home-experience";
@@ -18,14 +18,14 @@ export default function HomePage() {
       <SiteHeader />
       <main className="min-h-screen bg-[var(--bg)] text-[var(--black)]">
         <Hero />
-        <ServiceTiers />
-        <ChannelSightFeature />
+        <Tiers />
+        <Quote />
         <GoogleReviews />
-        <CaseStudies />
+        <Cases />
         <ArcMarquee />
-        <WorkPlan />
-        <CapabilitySequence />
-        <Guides />
+        <Team />
+        <Separates />
+        <BlogTeaser />
       </main>
       <SiteFooter />
       <ConsentBanner />

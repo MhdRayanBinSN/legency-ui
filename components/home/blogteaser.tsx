@@ -2,7 +2,7 @@
 import type { JSX } from "react";
 import { blogPosts } from "@/data/blog-posts";
 
-export default function Guides(): JSX.Element {
+export default function BlogTeaser(): JSX.Element {
   return (
     <section className="section blogteaser" data-astro-cid-lcdefpme>
       <div

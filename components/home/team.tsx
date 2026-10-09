@@ -2,9 +2,128 @@ import type { CSSProperties, JSX } from "react";
 
 export default function WorkPlan(): JSX.Element {
   return (
-<section className="section team" data-astro-cid-lcdefpme><div className="container mx-auto w-full max-w-[var(--max-w)] px-[var(--pad-x)] team__inner" data-astro-cid-lcdefpme><span className="label" data-astro-cid-lcdefpme>How we work</span><h2 className="team__title" data-astro-cid-lcdefpme>A clear plan for<br data-astro-cid-lcdefpme />the work ahead</h2>{/* Tiles are benefit-first: the heading is what the marketing lead
+    <section className="section team" data-astro-cid-lcdefpme>
+      <div
+        className="container mx-auto w-full max-w-[var(--max-w)] px-[var(--pad-x)] team__inner"
+        data-astro-cid-lcdefpme
+      >
+        <span className="label" data-astro-cid-lcdefpme>
+          How we work
+        </span>
+        <h2 className="team__title" data-astro-cid-lcdefpme>
+          A clear plan for
+          <br data-astro-cid-lcdefpme />
+          the work ahead
+        </h2>
+        {/* Tiles are benefit-first: the heading is what the marketing lead
            gets, the body carries the mechanism behind it. Icon chips reuse
            the blue rounded square from the tier chips and the numbered pills
-           in "What Separates Us" (Icon.astro). */}<div className="team__grid" data-astro-cid-lcdefpme><article className="sys-card" data-astro-cid-lcdefpme><span className="icon-chip" style={{'--icon-chip-size': '48px'} as CSSProperties} aria-hidden="true" data-astro-cid-ccg5yoga><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" data-astro-cid-ccg5yoga><path d="M20 14.5a2.5 2.5 0 0 1-2.5 2.5H9l-4 3.5V6.5A2.5 2.5 0 0 1 7.5 4h10A2.5 2.5 0 0 1 20 6.5Z" data-astro-cid-ccg5yoga></path><path d="M8.75 9.25h6.5" data-astro-cid-ccg5yoga></path><path d="M8.75 12.25h4" data-astro-cid-ccg5yoga></path></svg></span><h3 data-astro-cid-lcdefpme>Agreed priorities and delivery dates</h3><p data-astro-cid-lcdefpme>We agree the priorities with your team and schedule work around your plans. Requests stay in a shared channel, with larger changes scoped before work starts.</p></article><article className="sys-card" data-astro-cid-lcdefpme><span className="icon-chip" style={{'--icon-chip-size': '48px'} as CSSProperties} aria-hidden="true" data-astro-cid-ccg5yoga><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" data-astro-cid-ccg5yoga><path d="M12 3.25 4.75 6.1v5.4c0 4.2 2.9 7.6 7.25 9.25 4.35-1.65 7.25-5.05 7.25-9.25V6.1Z" data-astro-cid-ccg5yoga></path><path d="m9 12.1 2.15 2.15L15.3 10.1" data-astro-cid-ccg5yoga></path></svg></span><h3 data-astro-cid-lcdefpme>Support for your supplier approval process</h3><p data-astro-cid-lcdefpme>We work with your legal and finance teams on contracts, security questions and purchase-order billing. Our experience includes enterprise security reviews and corporate accounts payable.</p></article><article className="sys-card" data-astro-cid-lcdefpme><span className="icon-chip" style={{'--icon-chip-size': '48px'} as CSSProperties} aria-hidden="true" data-astro-cid-ccg5yoga><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" data-astro-cid-ccg5yoga><path d="M4.5 4v14.25a1.25 1.25 0 0 0 1.25 1.25H20" data-astro-cid-ccg5yoga></path><path d="m8 15.25 3.5-3.9 2.6 2.3 4.4-5.15" data-astro-cid-ccg5yoga></path><path d="M15.3 8.5h3.2v3.2" data-astro-cid-ccg5yoga></path></svg></span><h3 data-astro-cid-lcdefpme>Monthly reporting on results</h3><p data-astro-cid-lcdefpme>Your report shows completed work, the results we can measure and the priorities we recommend next. Depending on the agreed scope, it covers search visibility, AI citations and conversions.</p></article></div></div></section>
+           in "What Separates Us" (Icon.astro). */}
+        <div className="team__grid" data-astro-cid-lcdefpme>
+          <article className="sys-card" data-astro-cid-lcdefpme>
+            <span
+              className="icon-chip"
+              style={{ "--icon-chip-size": "48px" } as CSSProperties}
+              aria-hidden="true"
+              data-astro-cid-ccg5yoga
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                data-astro-cid-ccg5yoga
+              >
+                <path
+                  d="M20 14.5a2.5 2.5 0 0 1-2.5 2.5H9l-4 3.5V6.5A2.5 2.5 0 0 1 7.5 4h10A2.5 2.5 0 0 1 20 6.5Z"
+                  data-astro-cid-ccg5yoga
+                ></path>
+                <path d="M8.75 9.25h6.5" data-astro-cid-ccg5yoga></path>
+                <path d="M8.75 12.25h4" data-astro-cid-ccg5yoga></path>
+              </svg>
+            </span>
+            <h3 data-astro-cid-lcdefpme>
+              Agreed priorities and delivery dates
+            </h3>
+            <p data-astro-cid-lcdefpme>
+              We agree the priorities with your team and schedule work around
+              your plans. Requests stay in a shared channel, with larger changes
+              scoped before work starts.
+            </p>
+          </article>
+          <article className="sys-card" data-astro-cid-lcdefpme>
+            <span
+              className="icon-chip"
+              style={{ "--icon-chip-size": "48px" } as CSSProperties}
+              aria-hidden="true"
+              data-astro-cid-ccg5yoga
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                data-astro-cid-ccg5yoga
+              >
+                <path
+                  d="M12 3.25 4.75 6.1v5.4c0 4.2 2.9 7.6 7.25 9.25 4.35-1.65 7.25-5.05 7.25-9.25V6.1Z"
+                  data-astro-cid-ccg5yoga
+                ></path>
+                <path
+                  d="m9 12.1 2.15 2.15L15.3 10.1"
+                  data-astro-cid-ccg5yoga
+                ></path>
+              </svg>
+            </span>
+            <h3 data-astro-cid-lcdefpme>
+              Support for your supplier approval process
+            </h3>
+            <p data-astro-cid-lcdefpme>
+              We work with your legal and finance teams on contracts, security
+              questions and purchase-order billing. Our experience includes
+              enterprise security reviews and corporate accounts payable.
+            </p>
+          </article>
+          <article className="sys-card" data-astro-cid-lcdefpme>
+            <span
+              className="icon-chip"
+              style={{ "--icon-chip-size": "48px" } as CSSProperties}
+              aria-hidden="true"
+              data-astro-cid-ccg5yoga
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                data-astro-cid-ccg5yoga
+              >
+                <path
+                  d="M4.5 4v14.25a1.25 1.25 0 0 0 1.25 1.25H20"
+                  data-astro-cid-ccg5yoga
+                ></path>
+                <path
+                  d="m8 15.25 3.5-3.9 2.6 2.3 4.4-5.15"
+                  data-astro-cid-ccg5yoga
+                ></path>
+                <path d="M15.3 8.5h3.2v3.2" data-astro-cid-ccg5yoga></path>
+              </svg>
+            </span>
+            <h3 data-astro-cid-lcdefpme>Monthly reporting on results</h3>
+            <p data-astro-cid-lcdefpme>
+              Your report shows completed work, the results we can measure and
+              the priorities we recommend next. Depending on the agreed scope,
+              it covers search visibility, AI citations and conversions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
   );
 }

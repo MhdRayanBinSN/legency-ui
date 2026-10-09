@@ -14,18 +14,14 @@ export default function Separates(): JSX.Element {
         style={{ color: "var(--bg)" }}
         aria-hidden="true"
       ></div>
-      {/* UnicornStudio scene behind the whole dark band, pinned: it holds at
-         the top of the viewport while the band scrolls over it, then releases
-         at the band's bottom edge. Positioning is load-bearing and has bitten
-         four times - read the note on .separates__bg before changing it. */}
+      {/* Empty spacer behind the dark band. It has no content; .separates__bg
+         reserves the scroll length (height:100vh, position:sticky,
+         margin-bottom:-100vh) that the pinned panel animates through.
+         Positioning is load-bearing and has bitten four times - read the note
+         on .separates__bg in captured-home.css before changing it. */}
       <div
         className="separates__bg"
         aria-hidden="true"
-        data-us-project-src="/scene/band-loop.json"
-        data-us-fps="60"
-        data-us-scale="1"
-        data-us-dpi="1.5"
-        data-us-lazyload="true"
         data-astro-cid-lcdefpme
       ></div>
       <div

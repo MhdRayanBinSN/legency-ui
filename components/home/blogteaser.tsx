@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { JSX } from "react";
+import { blogPosts } from "@/data/blog-posts";
 
 export default function Guides(): JSX.Element {
   return (
@@ -14,114 +15,42 @@ export default function Guides(): JSX.Element {
           B2B marketing teams
         </h2>
         <div className="blogteaser__grid" data-astro-cid-lcdefpme>
-          <article className="post-card" data-astro-cid-lcdefpme>
-            <div className="post-card__media" data-astro-cid-lcdefpme>
-              <img
-                className="post-card__img"
-                src="/img/covers/b2b-website-performance-scorecard-abstract.jpg"
-                alt="Abstract blue dithered field with the centred headline What should you fix?"
-                width="1600"
-                height="1067"
-                loading="lazy"
-                decoding="async"
-                data-astro-cid-lcdefpme
-              />
-            </div>
-            <div className="post-card__meta" data-astro-cid-lcdefpme>
-              <span
-                className="post-card__tag"
-                data-tag="cro"
-                data-astro-cid-lcdefpme
-              >
-                CRO
-              </span>
-              <span data-astro-cid-lcdefpme>September 29, 2026</span>
-            </div>
-            <h3 data-astro-cid-lcdefpme>
-              B2B Website Performance Scorecard: 12 Evidence Checks
-            </h3>
-            <a
-              className="post-card__link"
-              data-underline-link
-              href="/blog/b2b-website-performance-scorecard/"
-              aria-label="Read the article: B2B Website Performance Scorecard: 12 Evidence Checks"
-              data-astro-cid-lcdefpme
-            >
-              Read the article &rarr;
-            </a>
-          </article>
-          <article className="post-card" data-astro-cid-lcdefpme>
-            <div className="post-card__media" data-astro-cid-lcdefpme>
-              <img
-                className="post-card__img"
-                src="/img/covers/how-long-does-a-wordpress-to-webflow-migration-take.jpg"
-                alt="A night street with light streaks rendered as a blue pixel dither, with The real timeline set on the left"
-                width="1600"
-                height="1067"
-                loading="lazy"
-                decoding="async"
-                data-astro-cid-lcdefpme
-              />
-            </div>
-            <div className="post-card__meta" data-astro-cid-lcdefpme>
-              <span
-                className="post-card__tag"
-                data-tag="webflow"
+          {blogPosts.slice(0, 3).map((post) => (
+            <article key={post.slug} className="post-card" data-astro-cid-lcdefpme>
+              <div className="post-card__media" data-astro-cid-lcdefpme>
+                <img
+                  className="post-card__img"
+                  src={post.image}
+                  alt={post.alt}
+                  width="1600"
+                  height="1067"
+                  loading="lazy"
+                  decoding="async"
+                  data-astro-cid-lcdefpme
+                />
+              </div>
+              <div className="post-card__meta" data-astro-cid-lcdefpme>
+                <span
+                  className="post-card__tag"
+                  data-tag={post.category.toLowerCase()}
+                  data-astro-cid-lcdefpme
+                >
+                  {post.category}
+                </span>
+                <span data-astro-cid-lcdefpme>{post.date}</span>
+              </div>
+              <h3 data-astro-cid-lcdefpme>{post.title}</h3>
+              <a
+                className="post-card__link"
+                data-underline-link
+                href={`/blog/${post.slug}/`}
+                aria-label={`Read the article: ${post.title}`}
                 data-astro-cid-lcdefpme
               >
-                Webflow
-              </span>
-              <span data-astro-cid-lcdefpme>September 15, 2026</span>
-            </div>
-            <h3 data-astro-cid-lcdefpme>
-              How Long Does a WordPress to Webflow Migration Take?
-            </h3>
-            <a
-              className="post-card__link"
-              data-underline-link
-              href="/blog/how-long-does-a-wordpress-to-webflow-migration-take/"
-              aria-label="Read the article: How Long Does a WordPress to Webflow Migration Take?"
-              data-astro-cid-lcdefpme
-            >
-              Read the article &rarr;
-            </a>
-          </article>
-          <article className="post-card" data-astro-cid-lcdefpme>
-            <div className="post-card__media" data-astro-cid-lcdefpme>
-              <img
-                className="post-card__img"
-                src="/img/covers/building-astro-websites-with-lumos.jpg"
-                alt="A modular building facade in blue pixel dither, captioned Built on Lumos"
-                width="1600"
-                height="1067"
-                loading="lazy"
-                decoding="async"
-                data-astro-cid-lcdefpme
-              />
-            </div>
-            <div className="post-card__meta" data-astro-cid-lcdefpme>
-              <span
-                className="post-card__tag"
-                data-tag="strategy"
-                data-astro-cid-lcdefpme
-              >
-                Strategy
-              </span>
-              <span data-astro-cid-lcdefpme>September 9, 2026</span>
-            </div>
-            <h3 data-astro-cid-lcdefpme>
-              Lumos Astro: How to Build With Lumos for Astro
-            </h3>
-            <a
-              className="post-card__link"
-              data-underline-link
-              href="/blog/building-astro-websites-with-lumos/"
-              aria-label="Read the article: Lumos Astro: How to Build With Lumos for Astro"
-              data-astro-cid-lcdefpme
-            >
-              Read the article &rarr;
-            </a>
-          </article>
+                Read the article &rarr;
+              </a>
+            </article>
+          ))}
         </div>
       </div>
     </section>

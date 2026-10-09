@@ -1,5 +1,4 @@
 import type { AnchorHTMLAttributes, JSX, ReactNode } from "react";
-import { cn } from "@/lib/utils";
 
 type BubbleArrowLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
@@ -18,9 +17,10 @@ export function BubbleArrowLink({
   variant = "blue",
   ...props
 }: BubbleArrowLinkProps): JSX.Element {
+  const classes = `btn-bubble-arrow ${variantClass[variant]}`;
   return (
     <a
-      className={cn("btn-bubble-arrow", variantClass[variant], className)}
+      className={className ? `${classes} ${className}` : classes}
       data-astro-cid-ekguhzzh="true"
       {...props}
     >

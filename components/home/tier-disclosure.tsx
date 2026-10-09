@@ -10,7 +10,10 @@ import { motion } from "motion/react";
 import type { HTMLMotionProps } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { cn } from "@/lib/utils";
+
+// lib/utils existed only to wrap clsx + tailwind-merge; every call site here is
+// a plain conditional join.
+const clsx = (...parts: (string | false | undefined)[]) => parts.filter(Boolean).join(" ");
 
 type TierDisclosureState = {
   collapsible: boolean;
@@ -42,7 +45,12 @@ export function TierDisclosure({
     <TierDisclosureContext.Provider value={state}>
       <article
         data-astro-cid-lcdefpme
-        className={cn("tier", collapsible && "is-collapsible", collapsible && open && "is-open", className)}
+        className={clsx(
+          "tier",
+          collapsible && "is-collapsible",
+          collapsible && open && "is-open",
+          className,
+        )}
       >
         {children}
       </article>
@@ -61,7 +69,7 @@ export function TierToggle({
     <Button
       type="button"
       data-astro-cid-lcdefpme
-      className={cn(className ? undefined : "tier__toggle", className)}
+      className={className ?? "tier__toggle"}
       aria-label={label}
       aria-expanded={open}
       aria-controls={id}
@@ -81,7 +89,7 @@ export function TierBody({ children, className, id, ...props }: TierBodyProps) {
       {...props}
       id={id}
       data-astro-cid-lcdefpme
-      className={cn("tier__body", className)}
+      className={className ? `tier__body ${className}` : "tier__body"}
       aria-hidden={collapsible && !open}
       initial={false}
       animate={{ height: collapsible ? (open ? "auto" : 0) : "auto", opacity: collapsible && !open ? 0 : 1 }}

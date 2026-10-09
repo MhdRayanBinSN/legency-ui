@@ -3,7 +3,13 @@ import { cn } from "@/lib/utils";
 
 type BubbleArrowLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
-  variant?: "blue" | "white";
+  variant?: "blue" | "white" | "black";
+};
+
+const variantClass: Record<NonNullable<BubbleArrowLinkProps["variant"]>, string> = {
+  blue: "btn-bubble-arrow--blue",
+  white: "btn-bubble-arrow--white",
+  black: "btn-bubble-arrow--black",
 };
 
 export function BubbleArrowLink({
@@ -14,7 +20,7 @@ export function BubbleArrowLink({
 }: BubbleArrowLinkProps): JSX.Element {
   return (
     <a
-      className={cn("btn-bubble-arrow", variant === "white" ? "btn-bubble-arrow--white" : "btn-bubble-arrow--blue", className)}
+      className={cn("btn-bubble-arrow", variantClass[variant], className)}
       data-astro-cid-ekguhzzh="true"
       {...props}
     >

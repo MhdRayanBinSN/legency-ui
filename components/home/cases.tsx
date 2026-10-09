@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { JSX } from "react";
+import { BubbleArrowLink } from "@/components/ui/bubble-arrow-link";
 
 export default function CaseStudies(): JSX.Element {
   return (
@@ -48,89 +49,7 @@ export default function CaseStudies(): JSX.Element {
               <span className="case-card__client" data-astro-cid-lcdefpme>
                 Blueflame AI
               </span>
-              <a
-                className="btn-bubble-arrow btn-bubble-arrow--white"
-                href="/case-studies/blueflame-ai/"
-                data-astro-cid-ekguhzzh="true"
-              >
-                <div
-                  className="btn-bubble-arrow__arrow"
-                  aria-hidden="true"
-                  data-astro-cid-ekguhzzh
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="100%"
-                    className="btn-bubble-arrow__arrow-svg"
-                    data-astro-cid-ekguhzzh
-                  >
-                    <polyline
-                      points="18 8 18 18 8 18"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></polyline>
-                    <line
-                      x1="18"
-                      y1="18"
-                      x2="5"
-                      y2="5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></line>
-                  </svg>
-                </div>
-                <div
-                  className="btn-bubble-arrow__content"
-                  data-astro-cid-ekguhzzh
-                >
-                  <span
-                    className="btn-bubble-arrow__content-text"
-                    data-astro-cid-ekguhzzh
-                  >
-                    Read the case study
-                  </span>
-                </div>
-                <div
-                  className="btn-bubble-arrow__arrow is--duplicate"
-                  aria-hidden="true"
-                  data-astro-cid-ekguhzzh
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="100%"
-                    className="btn-bubble-arrow__arrow-svg"
-                    data-astro-cid-ekguhzzh
-                  >
-                    <polyline
-                      points="18 8 18 18 8 18"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></polyline>
-                    <line
-                      x1="18"
-                      y1="18"
-                      x2="5"
-                      y2="5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></line>
-                  </svg>
-                </div>
-              </a>
+              <BubbleArrowLink variant="white" href="/case-studies/blueflame-ai/">Read the case study</BubbleArrowLink>
             </div>
           </article>
           <article className="case-card" data-astro-cid-lcdefpme>
@@ -166,89 +85,7 @@ export default function CaseStudies(): JSX.Element {
               <span className="case-card__client" data-astro-cid-lcdefpme>
                 ChannelSight
               </span>
-              <a
-                className="btn-bubble-arrow btn-bubble-arrow--white"
-                href="/case-studies/channelsight/"
-                data-astro-cid-ekguhzzh="true"
-              >
-                <div
-                  className="btn-bubble-arrow__arrow"
-                  aria-hidden="true"
-                  data-astro-cid-ekguhzzh
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="100%"
-                    className="btn-bubble-arrow__arrow-svg"
-                    data-astro-cid-ekguhzzh
-                  >
-                    <polyline
-                      points="18 8 18 18 8 18"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></polyline>
-                    <line
-                      x1="18"
-                      y1="18"
-                      x2="5"
-                      y2="5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></line>
-                  </svg>
-                </div>
-                <div
-                  className="btn-bubble-arrow__content"
-                  data-astro-cid-ekguhzzh
-                >
-                  <span
-                    className="btn-bubble-arrow__content-text"
-                    data-astro-cid-ekguhzzh
-                  >
-                    Read the case study
-                  </span>
-                </div>
-                <div
-                  className="btn-bubble-arrow__arrow is--duplicate"
-                  aria-hidden="true"
-                  data-astro-cid-ekguhzzh
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="100%"
-                    className="btn-bubble-arrow__arrow-svg"
-                    data-astro-cid-ekguhzzh
-                  >
-                    <polyline
-                      points="18 8 18 18 8 18"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></polyline>
-                    <line
-                      x1="18"
-                      y1="18"
-                      x2="5"
-                      y2="5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeMiterlimit="10"
-                      strokeWidth="1.5"
-                      data-astro-cid-ekguhzzh
-                    ></line>
-                  </svg>
-                </div>
-              </a>
+              <BubbleArrowLink variant="white" href="/case-studies/channelsight/">Read the case study</BubbleArrowLink>
             </div>
           </article>
         </div>

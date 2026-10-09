@@ -6,7 +6,7 @@ export default function GoogleReviews(): JSX.Element {
   return (
     <section
       className="greviews"
-      data-review-band-state="live"
+     
       data-astro-cid-yrxfijmp
     >
       <div

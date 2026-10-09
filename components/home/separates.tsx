@@ -7,10 +7,10 @@ export default function CapabilitySequence(): JSX.Element {
         className="pixelated-scroll-transition"
         data-pixelated-scroll-transition
         data-columns="24"
-        data-columns-tablet="18"
-        data-columns-mobile="10"
+       
+       
         data-rows="8"
-        data-mode="reveal"
+       
         style={{ color: "var(--bg)" }}
         aria-hidden="true"
       ></div>

@@ -83,7 +83,7 @@ export default function BlogListing({ posts }: { posts: BlogPost[] }): JSX.Eleme
         </section>
       )}
       {posts.length > 0 && (
-        <section className="section recent" data-filter-group data-astro-cid-x255k2k2>
+        <section className="section recent" data-astro-cid-x255k2k2>
           <div className="container mx-auto w-full max-w-[var(--max-w)] px-[var(--pad-x)]" data-astro-cid-x255k2k2>
             <div className="recent__head" data-astro-cid-x255k2k2>
               <h2 className="recent__title" data-astro-cid-x255k2k2>Recent Articles</h2>
@@ -95,7 +95,6 @@ export default function BlogListing({ posts }: { posts: BlogPost[] }): JSX.Eleme
                       key={filter}
                       type="button"
                       className="filter-btn"
-                      data-filter-target={filter.toLowerCase()}
                       data-filter-status={active ? "active" : "not-active"}
                       aria-pressed={active}
                       onClick={() => setSelectedFilter(filter)}
@@ -121,7 +120,6 @@ export default function BlogListing({ posts }: { posts: BlogPost[] }): JSX.Eleme
                   <li
                     key={post.slug}
                     className="filter-list__item"
-                    data-filter-name={post.category.toLowerCase()}
                     data-filter-status={status}
                     aria-hidden={!visible && status === "not-active"}
                     data-astro-cid-x255k2k2

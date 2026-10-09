@@ -528,14 +528,6 @@
   position: relative;
   overflow: hidden;
 }
-.tsnav__book-dither[data-astro-cid-wpvy4v7s] {
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  image-rendering: pixelated;
-  position: absolute;
-  inset: 0;
-}
 .tsnav__book-title[data-astro-cid-wpvy4v7s],
 .tsnav__book-cta[data-astro-cid-wpvy4v7s] {
   z-index: 1;

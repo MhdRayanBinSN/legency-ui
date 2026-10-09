@@ -92,7 +92,6 @@ export default function Hero(): JSX.Element {
               Selected clients and website projects
             </span>
             <div
-              data-logo-wall-shuffle="false"
               data-logo-wall-cycle-init=""
               className="logo-wall"
               aria-hidden="true"

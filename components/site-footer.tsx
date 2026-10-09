@@ -6,10 +6,9 @@ export default function SiteFooter(): JSX.Element {
   return (
     <footer
       className="site-footer"
-      data-footer-parallax
       data-astro-cid-jo6i4kqk
     >
-      <div data-footer-parallax-inner data-astro-cid-jo6i4kqk>
+      <div data-astro-cid-jo6i4kqk>
         <section className="closer" data-astro-cid-jo6i4kqk>
           <div
             className="closer__scene"
@@ -347,7 +346,6 @@ export default function SiteFooter(): JSX.Element {
       </div>
       <div
         className="site-footer__shade"
-        data-footer-parallax-dark
         aria-hidden="true"
         data-astro-cid-jo6i4kqk
       ></div>

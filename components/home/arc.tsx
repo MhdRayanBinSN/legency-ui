@@ -3,15 +3,6 @@ import type { JSX } from "react";
 export default function ArcMarquee(): JSX.Element {
   return (
     <section className="arc" aria-hidden="true" data-astro-cid-lcdefpme>
-      <div
-        className="arc__scene"
-        data-us-project-src="/scene/band-loop.json"
-        data-us-fps="60"
-        data-us-scale="1.5"
-        data-us-dpi="1.5"
-        data-us-lazyload="true"
-        data-astro-cid-lcdefpme
-      ></div>
       <svg
         viewBox="0 0 1728 294"
         preserveAspectRatio="xMidYMid slice"

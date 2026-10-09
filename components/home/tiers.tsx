@@ -5,7 +5,7 @@ import {
   TierToggle,
 } from "@/components/home/tier-disclosure";
 import { BubbleArrowLink } from "@/components/ui/bubble-arrow-link";
-import { Icon } from "@/components/home/icons";
+import { TierIcon } from "@/components/home/icons";
 
 export default function ServiceTiers(): JSX.Element {
   return (
@@ -77,23 +77,23 @@ export default function ServiceTiers(): JSX.Element {
               </p>
               <ul className="tier__list" data-astro-cid-lcdefpme>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="code" />
+                  <TierIcon name="code" />
                   Webflow development
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="bug" />
+                  <TierIcon name="bug" />
                   Bug fixes
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="database" />
+                  <TierIcon name="database" />
                   CMS setup and updates
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="slack" />
+                  <TierIcon name="slack" />
                   Slack support
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="calendar" />
+                  <TierIcon name="calendar" />
                   Monthly planning call
                 </li>
               </ul>
@@ -128,19 +128,19 @@ export default function ServiceTiers(): JSX.Element {
               </p>
               <ul className="tier__list" data-astro-cid-lcdefpme>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="document" />
+                  <TierIcon name="document" />
                   Campaign landing pages
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="search-ai" />
+                  <TierIcon name="search-ai" />
                   Search engine optimisation (SEO)
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="lightning" />
+                  <TierIcon name="lightning" />
                   Priority handling for urgent requests
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="calendar" />2 planning calls per month
+                  <TierIcon name="calendar" />2 planning calls per month
                 </li>
               </ul>
               <p className="tier__note" data-astro-cid-lcdefpme>
@@ -203,19 +203,19 @@ export default function ServiceTiers(): JSX.Element {
               </p>
               <ul className="tier__list" data-astro-cid-lcdefpme>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="flask" />
+                  <TierIcon name="flask" />
                   A/B testing where traffic supports a reliable result
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="chart" />
+                  <TierIcon name="chart" />
                   Conversion rate optimisation
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="analytics" />
+                  <TierIcon name="analytics" />
                   Analytics setup
                 </li>
                 <li data-astro-cid-lcdefpme>
-                  <Icon name="calendar" />
+                  <TierIcon name="calendar" />
                   Weekly planning calls
                 </li>
               </ul>

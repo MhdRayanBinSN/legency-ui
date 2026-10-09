@@ -1,4 +1,5 @@
-import type { CSSProperties, JSX } from "react";
+import type { JSX } from "react";
+import { TeamIcon } from "@/components/home/icons";
 
 export default function WorkPlan(): JSX.Element {
   return (
@@ -21,29 +22,7 @@ export default function WorkPlan(): JSX.Element {
            in "What Separates Us" (Icon.astro). */}
         <div className="team__grid" data-astro-cid-lcdefpme>
           <article className="sys-card" data-astro-cid-lcdefpme>
-            <span
-              className="icon-chip"
-              style={{ "--icon-chip-size": "48px" } as CSSProperties}
-              aria-hidden="true"
-              data-astro-cid-ccg5yoga
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                data-astro-cid-ccg5yoga
-              >
-                <path
-                  d="M20 14.5a2.5 2.5 0 0 1-2.5 2.5H9l-4 3.5V6.5A2.5 2.5 0 0 1 7.5 4h10A2.5 2.5 0 0 1 20 6.5Z"
-                  data-astro-cid-ccg5yoga
-                ></path>
-                <path d="M8.75 9.25h6.5" data-astro-cid-ccg5yoga></path>
-                <path d="M8.75 12.25h4" data-astro-cid-ccg5yoga></path>
-              </svg>
-            </span>
+            <TeamIcon name="plan" />
             <h3 data-astro-cid-lcdefpme>
               Agreed priorities and delivery dates
             </h3>
@@ -54,31 +33,7 @@ export default function WorkPlan(): JSX.Element {
             </p>
           </article>
           <article className="sys-card" data-astro-cid-lcdefpme>
-            <span
-              className="icon-chip"
-              style={{ "--icon-chip-size": "48px" } as CSSProperties}
-              aria-hidden="true"
-              data-astro-cid-ccg5yoga
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                data-astro-cid-ccg5yoga
-              >
-                <path
-                  d="M12 3.25 4.75 6.1v5.4c0 4.2 2.9 7.6 7.25 9.25 4.35-1.65 7.25-5.05 7.25-9.25V6.1Z"
-                  data-astro-cid-ccg5yoga
-                ></path>
-                <path
-                  d="m9 12.1 2.15 2.15L15.3 10.1"
-                  data-astro-cid-ccg5yoga
-                ></path>
-              </svg>
-            </span>
+            <TeamIcon name="supplier" />
             <h3 data-astro-cid-lcdefpme>
               Support for your supplier approval process
             </h3>
@@ -89,32 +44,7 @@ export default function WorkPlan(): JSX.Element {
             </p>
           </article>
           <article className="sys-card" data-astro-cid-lcdefpme>
-            <span
-              className="icon-chip"
-              style={{ "--icon-chip-size": "48px" } as CSSProperties}
-              aria-hidden="true"
-              data-astro-cid-ccg5yoga
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                data-astro-cid-ccg5yoga
-              >
-                <path
-                  d="M4.5 4v14.25a1.25 1.25 0 0 0 1.25 1.25H20"
-                  data-astro-cid-ccg5yoga
-                ></path>
-                <path
-                  d="m8 15.25 3.5-3.9 2.6 2.3 4.4-5.15"
-                  data-astro-cid-ccg5yoga
-                ></path>
-                <path d="M15.3 8.5h3.2v3.2" data-astro-cid-ccg5yoga></path>
-              </svg>
-            </span>
+            <TeamIcon name="reporting" />
             <h3 data-astro-cid-lcdefpme>Monthly reporting on results</h3>
             <p data-astro-cid-lcdefpme>
               Your report shows completed work, the results we can measure and
